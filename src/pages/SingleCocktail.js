@@ -14,7 +14,7 @@ export default function SingleCocktail() {
    const data = await response.json();
   if(data.drinks){
     const {strDrink:name, strDrinkThumb:image,
-      strAlcoholic:info, strCategory:category, strGlass:glass,
+      strAlcoholic:info, strGlass:glass,
        strInstructions:instructions, strIngredient1,strIngredient2,strIngredient3,strIngredient4,
        strIngredient5} = data.drinks[0];
        const ingredients = [strIngredient1, strIngredient2,strIngredient3,strIngredient4,strIngredient5];
